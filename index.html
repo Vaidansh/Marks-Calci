@@ -11,7 +11,14 @@
     <div class="background">
         <div class="container">
             <div class="box">
-            
+                <form onsubmit="calculateMarks(event)" class="calculate-form" id="calculateForm">
+                    <input type="number" min="0" max="100" required name="maths" placeholder="Maths">
+                    <input type="number" min="0" max="100" required name="english" placeholder="English">
+                    <input type="number" min="0" max="100" required name="physics" placeholder="Physics">
+                    <input type="number" min="0" max="100" required name="chemistry" placeholder="Chemistry">
+                    <button type="submit" class="primary-btn">Calculate</button>
+                </form>
+                <p id="result" class="result"></p>
             </div>
             <div class="content">
                 <h2>Calculate Your</h2>
